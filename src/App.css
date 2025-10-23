@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;500&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Noto Serif TC', serif;
+  color: #fff;
+  background: url("/temple-bg.jpg") center/cover no-repeat;
+  background-color: rgba(0,0,0,0.4);
+  background-blend-mode: darken;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.top-bar {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+  right: 30px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: rgba(255,255,255,0.9);
+}
+
+.top-bar .link {
+  margin-left: 20px;
+  text-decoration: none;
+  color: rgba(255,255,255,0.9);
+  transition: color .3s;
+}
+
+.top-bar .link:hover {
+  color: #ffd966;
+}
+
+.center {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;   /* 水平置中 */
+  align-items: center;       /* 垂直置中 */
+  text-align: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.texts p {
+  font-size: 18px;
+  line-height: 1.8;
+  margin: 0;
+}
+
+.lamp-img {
+  width: 120px;
+  margin: 40px auto;
+  transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+.lamp-img.lit {
+  transform: scale(1.05);
+  filter: drop-shadow(0 0 20px rgba(255,230,150,0.7));
+}
+
+.btn {
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.6);
+  color: #fff;
+  padding: 10px 35px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  border-color: #ffd966;
+  box-shadow: 0 0 20px rgba(255,230,150,0.5);
+}
